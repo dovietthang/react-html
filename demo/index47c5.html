@@ -1,0 +1,159 @@
+
+<html>
+      
+<!-- Mirrored from southteam.vn/demo/?id=3728 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Sep 2023 17:11:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Giao diện Website Mẫu South Team</title>
+    <style>
+     
+    body {
+    margin: 0;
+		}
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    html {
+        line-height: 1.5;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+    iframe {
+        border: 0;
+    } 
+    .full-screen-preview__frame{width:100%;background-color:black; border-radius: 20px;}
+    </style>
+    <script src="../../code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function($) {
+        $('body').hover(function(){
+        		// $('.topbar').css("height","0px");
+          }
+        );
+        setInterval(function() {
+         //$('.topbar').css("display","none");
+        }, 5000);
+        $(".toggle .fa-angle-double-up").click(function(){
+          $(".topbar").slideUp(400);
+          $('.topbar').css("height","0px");
+          calcHeight();
+          $(".fa-angle-double-up").hide(400);
+          $(".fa-angle-double-down").show(400);
+        });
+        $(".toggle .fa-angle-double-down").click(function(){
+          $('.topbar').css("height","45px");
+          $(".topbar").slideDown(400);
+          calcHeight();
+          $(".fa-angle-double-down").hide(400);
+          $(".fa-angle-double-up").show(400);
+        });
+      });
+      
+      
+    </script>
+    <script>
+$(document).ready(function(){
+    var width = $(window).width();
+    $(".tablet").click(function(){
+        $(".full-screen-preview__frame").css({"width": "768px", "height": "1024px", "padding": "40px 20px"});
+    });
+      $(".phone").click(function(){
+        $(".full-screen-preview__frame").css({"width": "380px", "height": "600px", "padding": "40px 20px"});
+    });
+      $(".desktop").click(function(){
+        $(".full-screen-preview__frame").css({"width": width,"padding": "0"});
+    });
+});
+</script>
+    <style>
+      .topbar{
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:50px;
+        background: #df3737;
+        }
+      .toggle {
+    position: fixed;
+    top: 7px;
+    right: 25px;
+    background: rgba(255, 255, 255, 0.84);
+    padding: 2px 8px;
+    font-size: 25px;
+}
+      .topbar .logo img{
+        height:45px;}
+      .topbar .logo{
+        width: 20%;
+    float: left;
+          }
+     .responsive-icon a img {-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+      .responsive-icon a {  display: inline-block;  margin-right: 10px;cursor: pointer; }
+      .responsive-icon {width: 40%; text-align: center; float: left;margin-top: 7px;}
+    	.topbar .btnCart{float: left; display: inline-block; padding-top: 10px; text-align: center; width: 20%;}
+      .topbar .btnCart a {
+    background: gold;
+    color: black;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px white;
+    border-bottom: solid lightgray 2px;
+    font-weight: bold;
+}
+     .hotline-topbar {
+    width: 20%;
+    float: left;
+    line-height: 50px;
+    font-size: 21px;
+}
+      </style>
+    <link rel="icon" type="image/png" href="../wp-content/uploads/2018/09/logo-black.png" />
+    <script src="../../use.fontawesome.com/889c77cee1.js"></script>
+</head>
+<body style="text-align:center">
+    <div class="topbar">
+    <div class="logo">
+        <a href="../index.html"><img src="../wp-content/themes/southteam/images/logo-all-black.png" alt="South Team" style="padding-left:20px;"></a>
+ </div>
+        <div class="hotline-topbar">
+            Hotline: 0938.049.434
+        </div>
+    <div class="responsive-icon">
+        <a><img src="../wp-content/themes/southteam/images/Responsive.png"></a>
+   <a class="desktop" title="Xem website theo ki&#7875;u máy tính"><img src="../wp-content/themes/southteam/images/BT_screen.png"></a>
+			<a class="tablet" title="Xem website theo ki&#7875;u máy tính b&#7843;ng"><img src="../wp-content/themes/southteam/images/BT_ipad.png"></a>
+			<a class="phone" title="Xem website theo ki&#7875;u &#273;i&#7879;n tho&#7841;i di &#273;&#7897;ng"><img src="../wp-content/themes/southteam/images/BT_iphone.png"></a>
+    </div>
+  	<div class="btnCart">
+      <a target="_blank" href="../bang-gia/index.html">
+        Đăng ký mẫu
+        </a>
+      </div>
+  </div>
+  <a href="#" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i><i style="display:none" class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+  <iframe class="full-screen-preview__frame" src="http://archworks.dymix.us/" name="preview-frame" frameborder="0" noresize="noresize" data-view="fullScreenPreview" style="height: 100%;padding-top:50px">
+  </iframe>
+  <!--------------------------Phone button---------------------------->
+  <style>
+    @media (max-width: 767px) { 
+        .topbar .btnCart a {display:none}
+    .responsive-icon {
+    display: none;
+}
+.hotline-topbar {
+    width: 80%;
+}
+    }
+    @media (min-width: 768px) { .hotlinemb {display:none}}
+ 
+  </style>
+  
+<!--------------------------End phone button---------------------------->  
+</body> 
+
+<!-- Mirrored from southteam.vn/demo/?id=3728 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Sep 2023 17:11:53 GMT -->
+</html>
